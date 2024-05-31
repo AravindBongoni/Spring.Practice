@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+               http://www.springframework.org/schema/context
+               http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
+  
+<bean id="std1" class="com.Practice.Student">
+	<property name="id" value="1"></property>
+	<property name="name" value="Avi"></property>
+	<property name="marks" value="56"></property>
+	<property name="attendnece" value="78"></property>
+</bean>
+<bean id="std2" class="com.Practice.Student">
+	<property name="id" value="7"></property>
+	<property name="name" value="Aravind"></property>
+	<property name="marks" value="5500"></property>
+	<property name="attendnece" value="89"></property>
+</bean>
+ <bean id = "emp1" class="com.Practice.EmpDetails">
+               <property name="id" value="78"></property>
+               <property name = "name" value ="nani"></property>
+               <property name = "address" value ="kar"></property>
+         
+ </bean>
+ <bean id = "emp2" class="com.Practice.EmpDetails">
+               <property name="id" value="6"></property>
+               <property name = "name" value ="vinnu"></property>
+               <property name = "address" value ="kphb"></property>
+ </bean>
+ 	<bean id="emp3" class="com.Practice.E3">
+		 <constructor-arg value="456" type="int"></constructor-arg>
+		 <constructor-arg value="nani"></constructor-arg>
+		 <constructor-arg value = "karm"></constructor-arg>
+	 </bean>
+ 
+</beans>
